@@ -1,0 +1,16 @@
+.page {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.status {
+  margin-top: 2rem;
+  color: #666;
+  font-size: 0.875rem;
+}

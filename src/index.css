@@ -1,0 +1,14 @@
+:root {
+  font-family: system-ui, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  color: #1f2933;
+  background: #fafaf7;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
