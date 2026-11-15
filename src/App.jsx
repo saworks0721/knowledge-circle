@@ -1,19 +1,14 @@
 import './App.css'
+import HomePage from './HomePage.jsx'
+import LoginPage from './LoginPage.jsx'
+import { useAuth } from './useAuth.js'
 
 function App() {
-  return (
-    <main className="page">
-      <h1>Knowledge Circle</h1>
-      <p className="lead">
-        組織の外のつながりで、経験と知恵を共有する招待制の場所。
-      </p>
-      <p className="lead" lang="en">
-        An invite-only space for sharing experience and wisdom with the people
-        you know beyond your organization.
-      </p>
-      <p className="status">準備中です（ひな形 v0.1）</p>
-    </main>
-  )
+  const { loading, user } = useAuth()
+
+  if (loading) return <p className="loading">読み込み中…</p>
+  if (!user) return <LoginPage />
+  return <HomePage user={user} />
 }
 
 export default App
